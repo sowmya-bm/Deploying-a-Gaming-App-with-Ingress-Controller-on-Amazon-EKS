@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gaming-deployment
+  namespace: game-2048
+  labels:
+    app: gaming
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gaming
+  template:
+    metadata:
+      labels:
+        app: gaming
+    spec:
+      containers:
+      - name: gaming2048
+        image: public.ecr.aws/l6m2t8p7/docker-2048:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
