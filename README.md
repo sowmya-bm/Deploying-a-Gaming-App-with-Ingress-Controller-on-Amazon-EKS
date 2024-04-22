@@ -28,4 +28,4 @@
    - "To download and update the helm for load balancer: `helm repo add eks https://aws.github.io/eks-charts` `helm repo update eks`"
    - "To install the load balancer: `helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=gaming2048 --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller --set region=us-east-1 --set vpcId=vpc-050b1e93673dbfcf4`"
 
-_**Visit my blog on Deploying a gaming application on an EKS cluster with ingress controller on hashnode - for more detailed explaination and POCs**__
+_**Visit my blog https://sowmya-mb-techblogs.hashnode.dev for more detailed explaination and POCs**_
